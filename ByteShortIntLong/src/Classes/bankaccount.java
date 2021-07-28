@@ -1,4 +1,4 @@
-package Java.training;
+package Classes;
 
 public class bankaccount {
     private String accountNumber;

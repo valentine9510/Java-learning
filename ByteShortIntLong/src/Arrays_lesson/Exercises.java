@@ -1,3 +1,6 @@
+package Arrays_lesson;
+
+import java.util.Collections;
 import java.util.Scanner;
 import java.util.Arrays;
 
@@ -5,9 +8,15 @@ public class Exercises {
     private static Scanner scanner = new Scanner(System.in);
 
     public static void array_challenge_exercise(){
-        int [] challenge_array = sortIntegers(getIntegers(5));
-        //Arrays.sort(challenge_array, Collections.reverseOrder());
-        printArray(challenge_array);
+        //int [] challenge_array = sortIntegers(getIntegers(5));
+        int [] challenge_array = getIntegers(5);
+        int [] copy_array = Arrays.copyOf(challenge_array,challenge_array.length);
+        //Arrays.sort(copy_array, Collections.reverseOrder());
+        Arrays.sort(challenge_array);
+        for (int i = 0;i<copy_array.length;i++){
+            copy_array[copy_array.length-i-1] = challenge_array[i];
+        }
+        printArray(copy_array);
     }
 
     public static void printArray(int[] array){

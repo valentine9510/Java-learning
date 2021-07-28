@@ -1,8 +1,47 @@
 package Java.training;
 
+import java.util.Scanner;
+
 public class ControlFlowStatements {
     public static void main(String[] args) {
-        String month = "jaNuary";
+
+
+    }
+    public static void printChallenge(){
+
+        Scanner scanner = new Scanner(System.in);
+        int sum = 0,count = 0;
+        for(int i = 1 ; i <= 10; i++){
+            System.out.println("Enter a number# "+ i);
+
+            boolean hasNextInt = scanner.hasNextInt();
+            if (!hasNextInt){
+                System.out.println("Enter valid number");
+                scanner.nextLine(); //handles next line character and if not put it will be an infinite loop
+                i--;
+                continue; //dont do rest of loop
+            }
+
+            int number = scanner.nextInt();
+            scanner.nextLine(); //handle next line character (enter key)
+            System.out.println("You entered " + number);
+            sum += number;
+        }
+        System.out.println("The sum of the numbers that you entered is "+ sum);
+
+        scanner.close();
+    }
+
+    public static boolean isEvenNumber(int number){
+        if(number%2 == 0){
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+    public static double calculateInterest(double amount, double interestRate){
+        return (amount *(interestRate/100));
     }
     public static void printNumberInWord(int word){
         switch(word){
