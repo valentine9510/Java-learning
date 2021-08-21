@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Collections/Collections.iml" filepath="$PROJECT_DIR$/Collections/Collections.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Java_learning_course.iml" filepath="$PROJECT_DIR$/.idea/Java_learning_course.iml" />
       <module fileurl="file://$PROJECT_DIR$/Operators/Operators.iml" filepath="$PROJECT_DIR$/Operators/Operators.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PackageChallenge/PackageChallenge.iml" filepath="$PROJECT_DIR$/PackageChallenge/PackageChallenge.iml" />
       <module fileurl="file://$PROJECT_DIR$/Packages/Packages.iml" filepath="$PROJECT_DIR$/Packages/Packages.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PersonalClasses.iml" filepath="$PROJECT_DIR$/PersonalClasses.iml" />
       <module fileurl="file://$PROJECT_DIR$/firstClasses/firstClasses.iml" filepath="$PROJECT_DIR$/firstClasses/firstClasses.iml" />
     </modules>
   </component>
