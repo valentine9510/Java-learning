@@ -15,6 +15,11 @@ public class MapProgram {
         System.out.println(languages.get("Java"));
 
         System.out.println("============================");
+        languages.remove("Java");
+        if (!languages.remove("Algol","Hi")){
+            System.out.println("Failed to remove Algol");
+        }
+
         for (String key : languages.keySet()){
             System.out.println(key + " : " + languages.get(key));
         }
